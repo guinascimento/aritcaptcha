@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Guilherme Nascimento"]
   s.date = %q{2010-07-03}
-  s.description = %q{Arithmetic Captcha}
+  s.description = %q{TODO: longer description of your gem}
   s.email = %q{guilherme.ruby@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE",
@@ -36,7 +36,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
-  s.summary = %q{Arithmetic Captcha}
+  s.summary = %q{TODO: one-line summary of your gem}
   s.test_files = [
     "spec/aritcaptcha_helper_spec.rb",
      "spec/aritcaptcha_spec.rb",
