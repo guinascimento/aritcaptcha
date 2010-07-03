@@ -23,7 +23,11 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION",
+     "aritcaptcha.gemspec",
      "lib/aritcaptcha.rb",
+     "lib/aritcaptcha/calculation.rb",
+     "lib/aritcaptcha_helper.rb",
+     "spec/aritcaptcha_helper_spec.rb",
      "spec/aritcaptcha_spec.rb",
      "spec/spec.opts",
      "spec/spec_helper.rb"
