@@ -1,6 +1,6 @@
 module Aritcaptcha
 
-  class AritcaptchaHelper
+  module AritcaptchaHelper
     ADD = '+'
     SUB = '-'
     DIV = '/'
