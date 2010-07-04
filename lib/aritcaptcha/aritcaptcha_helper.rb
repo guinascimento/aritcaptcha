@@ -14,11 +14,9 @@ module Aritcaptcha
       number2 = options[:two] || 50
       operation = options[:op] || OPERATIONS[rand(OPERATIONS.size)]
 
-      result = nil
 
-      while result.nil? or !result.is_a?(Integer) or result < 0
-        equation, result = Aritcaptcha::Calculation.generate_calculation number1, number2, operation
-      end
+      equation, result = Aritcaptcha::Calculation.generate_calculation number1, number2, operation
+
 
       session[:equation] = [equation_key, eval(equation)]
 
