@@ -5,10 +5,8 @@ module Aritcaptcha
     SOLV      = 1
 
     def verify_aritcaptcha(params)
-      puts params[:equation_key]
-      puts params[:equation]
-      if (solv_key = params[:equation_key]) and (solv = params[:equation])
-        return (session[:equation] and session[:equation][SOLV_KEY] == solv_key.to_i and session[:equation][SOLV] == solv.to_i)
+      if (equation_key = params[:equation_key]) and (equation = params[:equation])
+        return (session[:equation] and session[:equation][SOLV_KEY] == equation_key.to_i and session[:equation][SOLV] == equation.to_i)
       end          
     end
   end
