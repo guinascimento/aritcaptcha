@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{aritcaptcha}
-  s.version = "1.2.0"
+  s.version = "1.3.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Guilherme Nascimento"]
@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
      "VERSION",
      "aritcaptcha.gemspec",
      "lib/aritcaptcha.rb",
+     "lib/aritcaptcha/aritcaptcha_helper.rb",
      "lib/aritcaptcha/calculation.rb",
      "spec/aritcaptcha_helper_spec.rb",
      "spec/aritcaptcha_spec.rb",
