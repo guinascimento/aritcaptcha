@@ -5,8 +5,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "aritcaptcha"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Arithmetic Captcha}
+    gem.description = %Q{Arithmetic Captcha}
     gem.email = "guilherme.ruby@gmail.com"
     gem.homepage = "http://github.com/guinascimento/aritcaptcha"
     gem.authors = ["Guilherme Nascimento"]

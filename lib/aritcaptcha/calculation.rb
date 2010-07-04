@@ -1,4 +1,4 @@
-module Captcha
+module Aritcaptcha
 
   class Calculation
   
