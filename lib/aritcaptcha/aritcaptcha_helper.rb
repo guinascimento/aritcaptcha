@@ -23,12 +23,7 @@ module Aritcaptcha
         operator = non_default_operations.to_a[rand(non_default_operations.size)][1]
       end
 
-      options = {
-        :one => 50,
-        :two => 50
-      }.merge options
-
-      equation, result = Aritcaptcha::Calculation.generate_calculation options, options[:one].to_i, options[:two].to_i
+      equation, result = Aritcaptcha::Calculation.generate_calculation options, 50, 50
       session[:equation] = [equation_key, eval(equation)]
       puts "=========================================================="
       puts equation
