@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{aritcaptcha}
-  s.version = "1.12.0"
+  s.version = "1.14.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Guilherme Nascimento"]
-  s.date = %q{2010-07-04}
+  s.date = %q{2010-07-05}
   s.description = %q{Arithmetic Captcha}
   s.email = %q{guilherme.ruby@gmail.com}
   s.extra_rdoc_files = [

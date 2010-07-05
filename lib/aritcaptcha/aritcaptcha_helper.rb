@@ -12,13 +12,6 @@ module Aritcaptcha
       equation_key = Time.now.to_i 
       operations = {:add => "+", :sub => "-", :mul => "*", :div => "/"}
 
-      equation, result = Aritcaptcha::Calculation.generate_calculation number1, number2, operation
-      session[:equation] = [equation_key, eval(equation)]
-      puts "=========================================================="
-      puts equation
-      puts result
-      puts "=========================================================="
-
       operator = nil
       if options[:op] == nil
         operator = operations.to_a[rand(operations.size)][1]
@@ -34,6 +27,13 @@ module Aritcaptcha
         :one => 50,
         :two => 50
       }.merge options
+
+      equation, result = Aritcaptcha::Calculation.generate_calculation options, options[:one], options[:two]
+      session[:equation] = [equation_key, eval(equation)]
+      puts "=========================================================="
+      puts equation
+      puts result
+      puts "=========================================================="
 
       options[:op] = operator
 
