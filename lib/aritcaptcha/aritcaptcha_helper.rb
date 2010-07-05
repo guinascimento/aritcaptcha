@@ -1,12 +1,6 @@
 module Aritcaptcha
 
   module AritcaptchaHelper
-    ADD = '+'
-    SUB = '-'
-    DIV = '/'
-    MUL = '*'
-
-    OPERATIONS = [ADD, SUB, DIV, MUL]
 
     def aritcaptcha_tag(options={})
       equation_key = Time.now.to_i 
@@ -24,13 +18,13 @@ module Aritcaptcha
       end
 
       equation, result = Aritcaptcha::Calculation.generate_calculation options, 50, 50
-      session[:equation] = [equation_key, eval(equation)]
+      #session[:equation] = [equation_key, eval(equation)]
       puts "=========================================================="
       puts equation
       puts result
       puts "=========================================================="
 
-      options[:op] = operator
+      #options[:op] = operator
 
       if options[:html]
         options = options[:html].inject([]){|dump, pair| dump << "#{pair[0]}=\"#{pair[1]}\""}
