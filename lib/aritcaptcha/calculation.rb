@@ -8,7 +8,7 @@ module Aritcaptcha
       equation = "#{number1} #{operation} #{number2}"
 
       # Division by zero
-      return [nil, nil] if operation == "/" and number2.zero?
+      return [nil, nil] if operation == "/" and number1.zero? or number2.zero?
 
       result = eval("#{number1.to_f} #{operation} #{number2.to_f}")
 
@@ -18,5 +18,3 @@ module Aritcaptcha
   end
 
 end
-
-puts Aritcaptcha::Calculation.generate_calculation(10, 0, "/")
