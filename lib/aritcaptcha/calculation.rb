@@ -2,7 +2,7 @@ module Aritcaptcha
 
   class Calculation
   
-    def generate_calculation number1, number2, operator
+    def self.generate_calculation number1, number2, operator
       # Division by zero
       return [nil, nil] if operator == "/" and number1.zero? or number2.zero?
 
