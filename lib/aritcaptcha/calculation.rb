@@ -11,6 +11,7 @@ module Aritcaptcha
 
       equation = "#{number1} #{operator} #{number2}"
       result = eval("#{number1.to_f} #{operator} #{number2.to_f}")
+      result = (result == result.floor) ? result.to_i : result
 
       [equation, result]
     end

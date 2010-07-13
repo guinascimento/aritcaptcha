@@ -36,8 +36,8 @@ module Aritcaptcha
       html = ""
       if options[:format] == "image"
       	 session[:image] = equation_key
-         format = generate_image equation_key, equation
-         html << "<img src=\"#{format}\" style='vertical-align:top;' /> <input type=\"text\" name=\"equation\" size=\"3\" style='vertical-align:top;' #{options} />"
+         img = generate_image equation_key, equation
+         html << "<img src=\"/images/aritcaptcha/#{img}\" style='vertical-align:top;' /> <input type=\"text\" name=\"equation\" size=\"3\" style='vertical-align:top;' #{options} />"
       else
       	html << "#{equation} = <input type=\"text\" name=\"equation\" style='vertical-align:top;' size=\"3\" #{options} /></div>"
       end
@@ -47,7 +47,7 @@ module Aritcaptcha
 
     def generate_image(equation_key, equation)
       relative_name = "#{equation_key}.png"
-      full_path     = "#{Rails.root}/public/images/#{relative_name}"
+      full_path     = "#{Rails.root}/public/images/aritcaptcha/#{relative_name}"
 
       unless File.file?(full_path)
          image = Magick::Image.new(85, 25)
@@ -63,8 +63,8 @@ module Aritcaptcha
            self.pointsize   = 20
          end
          image.write(full_path)
-       end
-       url = image_path(relative_name)
+      end      
+       relative_name
     end
   end
 
