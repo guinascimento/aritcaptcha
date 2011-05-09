@@ -29,7 +29,7 @@ module Aritcaptcha
       session[:equation] = [equation_key, eval(equation)]
 
       if options[:html]
-        options = options[:html].inject([]){|dump, pair| dump << "#{pair[0]}=\"#{pair[1]}\""}
+        options = options[:html].inject([]) { |dump, pair| dump << "#{pair[0]}=\"#{pair[1]}\"" }
         options = options.join(" ")
       end
 
