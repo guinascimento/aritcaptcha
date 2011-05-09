@@ -20,6 +20,12 @@ If you want to restrict the arithmetic operations:
 
 	<%= raw aritcaptcha_tag :operations => [:add, :sub] %> # only the operations of addition and subtraction are displayed
 
+To validate the data entered by the user, put this verification inside an action:
+
+ 	<% if verify_aritcaptcha(params) %>
+		# correct answer
+	<% end >
+
 ## Contributing to Aritcaptcha
 
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
