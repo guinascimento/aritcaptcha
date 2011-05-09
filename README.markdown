@@ -1,6 +1,6 @@
 # Aritcaptcha: A simple numeric captcha for Rails 3
 
-Aritcaptcha provides a simple way to display a numeric captcha inside a pgae.
+Aritcaptcha provides a simple way to display a numeric captcha inside a page.
 
 ## Usage
 
