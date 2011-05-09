@@ -1,4 +1,4 @@
-# Aritcaptcha: A simple numeric captcha for Rails 3
+# Aritcaptcha: A simple arithmetic captcha for Rails 3
 
 Aritcaptcha provides a simple way to display a arithmetic captcha inside a page.
 
