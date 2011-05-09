@@ -18,7 +18,7 @@ If you want to use a numeric captcha that renders an image:
 
 If you want to restrict the arithmetic operations:
 
-	<%= raw aritcaptcha_tag :operations => [:add, :sub], :format => "image" %> # only the operations of addition and subtraction are displayed
+	<%= raw aritcaptcha_tag :operations => [:add, :sub] %> # only the operations of addition and subtraction are displayed
 
 ## Contributing to Aritcaptcha
 
