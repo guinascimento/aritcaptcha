@@ -13,7 +13,7 @@ module Aritcaptcha
     end
 
     def clean image
-       unless image == nil
+      unless image == nil
           relative_name = "#{image}.png"
           full_path     = "#{Rails.root}/public/images/aritcaptcha/#{relative_name}"
           File.delete(full_path)
