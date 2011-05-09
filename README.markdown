@@ -2,23 +2,23 @@
 
 Aritcaptcha provides a simple way to display a numeric captcha inside a pgae.
 
-## Hello, world
+## Usage
 
 Use RubyGems to install:
 
-    $ gem install aritcaptcha
+	$ gem install aritcaptcha
 
 After the installation you can generate a simple numeric captcha inside a page:
 
-		$ <%= raw aritcaptcha_tag %>
+	$ <%= raw aritcaptcha_tag %>
 
 If you want to use a numeric captcha that renders an image:
 
-		$ <%= raw aritcaptcha_tag :format => "image" %>
+	$ <%= raw aritcaptcha_tag :format => "image" %>
 
 If you want to restrict the arithmetic operations:
 
-		$ <%= raw aritcaptcha_tag :operations => [:add, :sub], :format => "image" %> # only the operations of addition and subtraction are displayed
+	$ <%= raw aritcaptcha_tag :operations => [:add, :sub], :format => "image" %> # only the operations of addition and subtraction are displayed
 
 ## Contributing to Aritcaptcha
 
