@@ -49,7 +49,7 @@ module Aritcaptcha
     end
 
     def generate_image(equation_key, equation)
-      relative_name = "#{equation_key}.png"
+      relative_name = "equacao-#{equation_key}.png"
       full_path     = "#{Rails.root}/public/images/#{relative_name}"
 
       unless File.file?(full_path)
