@@ -1,6 +1,6 @@
 # Aritcaptcha: A simple numeric captcha for Rails 3
 
-Aritcaptcha provides a simple way to display a numeric captcha inside a page.
+Aritcaptcha provides a simple way to display a arithmetic captcha inside a page.
 
 ## Usage
 
@@ -8,7 +8,7 @@ Use RubyGems to install:
 
 	$ gem install aritcaptcha
 
-After the installation you can generate a simple numeric captcha inside a page:
+After the installation you can generate a simple arithmetic captcha inside a page:
 
 	<%= raw aritcaptcha_tag %>
 
