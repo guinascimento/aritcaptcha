@@ -1,3 +1,5 @@
+require 'RMagick'
+include Magick
 require "aritcaptcha/calculation"
 
 module Aritcaptcha
